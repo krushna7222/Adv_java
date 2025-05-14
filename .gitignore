@@ -1,0 +1,7 @@
+*.class
+*.log
+*.old
+*.hyb
+*.pb
+*.metadata
+*.prefs

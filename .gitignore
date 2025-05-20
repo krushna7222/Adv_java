@@ -5,3 +5,10 @@
 *.pb
 *.metadata
 *.prefs
+*.settings
+*.classpath
+*.project
+*META-INF
+*lib
+*Servers
+

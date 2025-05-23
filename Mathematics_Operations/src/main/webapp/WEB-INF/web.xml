@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>Mathematics_Operations</display-name>
+  
+  <servlet>
+    <servlet-name>add</servlet-name>
+    <servlet-class>mathematics_operations.Add_Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>add</servlet-name>
+    <url-pattern>/addition</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>sub</servlet-name>
+    <servlet-class>mathematics_operations.Sub_Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>sub</servlet-name>
+    <url-pattern>/subtraction</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>mult</servlet-name>
+    <servlet-class>mathematics_operations.Mult_Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>mult</servlet-name>
+    <url-pattern>/multiplication</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>div</servlet-name>
+    <servlet-class>mathematics_operations.Div_Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>div</servlet-name>
+    <url-pattern>/division</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>cube</servlet-name>
+    <servlet-class>mathematics_operations.Cube_Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>cube</servlet-name>
+    <url-pattern>/cube</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+</web-app>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>JSP_Programming_Using_Application_Interface</display-name>
+  
+  
+  <context-param>
+	  <param-name>name</param-name>
+	  <param-value>Krushna Shahane</param-value>
+  </context-param>
+  
+  <context-param>
+	  <param-name>education</param-name>
+	  <param-value>Computer Science</param-value>
+  </context-param>
+  
+  <context-param>
+	  <param-name>course</param-name>
+	  <param-value>Java FullStack</param-value>
+  </context-param>
+  
+  <context-param>
+	  <param-name>class-name</param-name>
+	  <param-value>Seven Mentors</param-value>
+  </context-param>
+  
+  <context-param>
+	  <param-name>trainer-name</param-name>
+	  <param-value>Pooja Ma'am</param-value>
+  </context-param>
+  
+ <!--  for 1st JSP File -->
+ 
+  <servlet>
+	  <servlet-name>application-interface1</servlet-name>
+	  <jsp-file>/Application_Implicite_Object1.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+	  <servlet-name>application-interface1</servlet-name>
+	  <url-pattern>/Application_Implicite_Object1</url-pattern>
+  </servlet-mapping>
+  
+  <!--  for 2nd JSP File -->
+ 
+  <servlet>
+  <servlet-name>application-interface2</servlet-name>
+  <jsp-file>/Application_Implicite_Object2.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>application-interface2</servlet-name>
+  <url-pattern>/Application_Implicite_Object2</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

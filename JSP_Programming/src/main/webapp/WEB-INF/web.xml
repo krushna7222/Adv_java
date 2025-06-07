@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>JSP_Programming</display-name>
+  
+  
+  <!-- mapping of first jsp file -->
+   
+        <servlet>
+            <servlet-name>sample</servlet-name>
+            <jsp-file>/config_implicit_object1.jsp</jsp-file>
+        
+             <init-param>
+                 <param-name>dbname</param-name>
+                 <param-value>mysql</param-value>
+             </init-param>
+        
+             <init-param>
+                 <param-name>dbUsername</param-name>
+                 <param-value>root</param-value>
+             </init-param>
+             
+             <init-param>
+                 <param-name>dbpass</param-name>
+                 <param-value>16161</param-value>
+             </init-param>
+        
+        </servlet>
+ 
+        <servlet-mapping>
+            <servlet-name>sample</servlet-name>
+            <url-pattern>/config_implicit_object1</url-pattern>
+        </servlet-mapping>
+        
+        
+        
+        
+         <!-- mapping of 2nd jsp file -->
+   
+        <servlet>
+            <servlet-name>sample2</servlet-name>
+            <jsp-file>/config_implicit_object2.jsp</jsp-file>
+             
+             <init-param>
+                <param-name>serverName</param-name>
+                <param-value>eureka</param-value>
+             </init-param>
+             
+             <init-param>
+                <param-name>serverPort</param-name>
+                <param-value>8071</param-value>
+             </init-param>
+      
+        </servlet>
+ 
+        <servlet-mapping>
+            <servlet-name>sample2</servlet-name>
+            <url-pattern>/config_implicit_object2</url-pattern>
+        </servlet-mapping>
+        
+ 
+</web-app>
